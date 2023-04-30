@@ -26,7 +26,7 @@ html {
     // margin: 0;
   font-family: -apple-system, Montserrat, 'Helvetica Neue', sans-serif;
   color: #212121;
-  background-color: #F9EBEA ;
+  background-color: #CCCCFF ;
   
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

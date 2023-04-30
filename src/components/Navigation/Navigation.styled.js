@@ -11,11 +11,11 @@ export const StyledLink = styled(NavLink)`
   :last-child {
     margin-left: 20px;
   }
-  :first-child {
-    margin-left: 50px;
-  }
+  // :first-child {
+  //   margin-left: 50px;
+  // }
   &.active {
     color: white;
-    background-color: #e57373;
+    background-color: #4b2a99;
   }
 `;

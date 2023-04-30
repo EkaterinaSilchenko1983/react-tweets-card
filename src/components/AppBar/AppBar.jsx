@@ -1,3 +1,4 @@
+import { Container } from '../../pages/HomePage/HomePage.styled';
 import { Navigation } from '../Navigation/Navigation';
 
 import { Header } from './AppBar.styled';
@@ -5,7 +6,9 @@ import { Header } from './AppBar.styled';
 export const AppBar = () => {
   return (
     <Header>
-      <Navigation />
+      <Container>
+        <Navigation />
+      </Container>
     </Header>
   );
 };

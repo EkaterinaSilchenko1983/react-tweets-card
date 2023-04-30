@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: flex;
-  min-height: calc(100vh - 50px);
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
+  width: 1240px;
+  margin: 0 auto;
+  padding: 40px 20px;
 `;
 
 export const Title = styled.h1`
@@ -14,11 +12,19 @@ export const Title = styled.h1`
   font-weight: 500;
   font-size: 48;
   text-align: center;
-  color: #e57373;
+  color: #4b2a99;
   gap: 100px;
 `;
 
-export const Icon = styled.div`
+export const SignContainer = styled.div`
   display: flex;
   justify-content: center;
+  align-item: ceter;
+  margin-top: 50px;
+`;
+
+export const Sign = styled.div`
+  display: flex;
+  width: 308px;
+  height: 168px;
 `;
