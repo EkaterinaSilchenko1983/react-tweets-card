@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { getCards } from '../../shared/API/tweets';
 import { Card } from '../Card/Card';
 import { Loader } from '../Loader/Loader';
@@ -15,14 +15,7 @@ export const CardList = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const isFirstRender = useRef(true); //   прибираєм ре-рендеринг
-
   useEffect(() => {
-    if (isFirstRender.current) {
-      isFirstRender.current = false;
-      return;
-    }
-
     const fetchCards = async () => {
       try {
         setIsLoading(true);
@@ -44,7 +37,7 @@ export const CardList = () => {
         top: document.documentElement.scrollHeight,
         behavior: 'smooth',
       });
-  });
+  }, [users, page]);
 
   const hendleLoadMore = () => {
     setPage(prevPage => prevPage + 1);

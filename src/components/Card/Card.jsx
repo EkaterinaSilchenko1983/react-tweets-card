@@ -16,7 +16,6 @@ export const Card = ({ id, avatar, tweets, followers }) => {
     return prevIsActive ? JSON.parse(prevIsActive) : false;
   });
   const [initialFollowers, setInitialFollowers] = useState(followers);
-
   useEffect(() => {
     const prevFollowers = localStorage.getItem(`initialFollowers_${id}`);
 
